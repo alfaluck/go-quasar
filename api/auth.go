@@ -2,7 +2,9 @@ package api
 
 import "log"
 
-type Auth struct {}
+//go:generate smd-gen
+
+type Auth struct {} //zenrpc
 
 type Credentials struct {
 	Email string `json:"email"`
